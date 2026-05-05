@@ -1,427 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shaza Gouda - Frontend Developer</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shaza Gouda — Full-Stack Developer specialized in Angular, PHP, Node.js, .NET Core. Building scalable, user-centered web applications.">
+  <meta name="author" content="Shaza Gouda">
+  <title>Shaza Gouda · Full-Stack Developer Portfolio</title>
 
-     <link rel="stylesheet" href="./portfolio.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">Shaza.dev</a>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#" data-page="home" class="nav-link active">Home</a></li>
-                <li class="nav-item"><a href="#" data-page="about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#" data-page="skills" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#" data-page="experience" class="nav-link">Experience</a></li>
-                <li class="nav-item"><a href="#" data-page="projects" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="#" data-page="contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="mobile-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+
+<i class="fas fa-code geom-bg-icon" style="top: 8%; left: 1%;"></i>
+<i class="fas fa-dotnet geom-bg-icon" style="bottom: 18%; right: 2%; animation-duration: 10s;"></i>
+<i class="fas fa-database geom-bg-icon" style="top: 48%; right: 5%; animation-duration: 9s;"></i>
+<i class="fab fa-angular geom-bg-icon" style="bottom: 35%; left: 4%; animation-duration: 12s;"></i>
+<i class="fab fa-php geom-bg-icon" style="top: 75%; left: 90%; animation-duration: 7s;"></i>
+<i class="fab fa-js geom-bg-icon" style="top: 20%; right: 12%; animation-duration: 11s;"></i>
+<i class="fas fa-cloud geom-bg-icon" style="bottom: 60%; left: 88%;"></i>
+<i class="fas fa-terminal geom-bg-icon" style="top: 30%; left: 15%; animation-duration: 14s;"></i>
+<i class="fas fa-laptop-code geom-bg-icon" style="bottom: 10%; left: 20%; animation-duration: 13s;"></i>
+
+<div id="scrollProgress"></div>
+
+<nav>
+  <a class="nav-logo" href="#"><i class="fas fa-terminal me-1"></i> Shaza.dev</a>
+  <ul class="nav-links">
+    <li><a href="#home"><i class="fas fa-home me-1"></i>Home</a></li>
+    <li><a href="#about"><i class="fas fa-user me-1"></i>About</a></li>
+    <li><a href="#skills"><i class="fas fa-microchip me-1"></i>Skills</a></li>
+    <li><a href="#experience"><i class="fas fa-briefcase me-1"></i>Experience</a></li>
+    <li><a href="#projects"><i class="fas fa-laptop-code me-1"></i>Projects</a></li>
+    <li><a href="#contact"><i class="fas fa-envelope me-1"></i>Contact</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+  <section id="home">
+    <div class="row align-items-center g-5" style="min-height: 80vh;">
+      <div class="col-lg-7 fade-up">
+        <div class="hero-tag"><i class="fas fa-vector-square me-2"></i> FULL-STACK DEVELOPER · ANGULAR · .NET · PHP</div>
+        <h1 class="hero-name">Shaza<br><span>Gouda</span></h1>
+        <p class="hero-summary" id="typedText"></p>
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="#projects" class="btn btn-outline-copper fade-up"><i class="fas fa-arrow-right me-2"></i> Explore Work</a>
+          <a href="#" class="btn btn-outline-copper fade-up" id="resumeBtn"><i class="fas fa-file-pdf me-2"></i> Download CV</a>
         </div>
-    </nav>
-
-    <div class="container">
-        <!-- Home Section -->
-        <section id="home" class="page-section active">
-            <div class="hero">
-                <div class="hero-content">
-                    <h1>Hi, I'm Shaza</h1>
-                    <p class="subtitle">Frontend Developer</p>
-                    <p>I build modern, responsive web applications using Angular and PHP. I'm passionate about solving real-world problems through elegant and efficient code. Let's create something impactful together!</p>
-                    
-                </div>
-                <div class="hero-image">
-                    <img src="./WhatsApp Image 2025-08-19 at 10.36.10_edb701aa.jpg" alt="Shaza Gouda" class="profile-image floating">
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="page-section">
-            <div class="content-section animate-on-scroll">
-                <h2 class="section-title"><i class="fas fa-user"></i> About Me</h2>
-                <p style="font-size: 1.1rem; line-height: 1.8; text-align: center; margin-bottom: 2rem;">
-                    I'm Shaza, a third-year student at the Faculty of Computers and Information, Assiut University – Egypt. 
-                    I'm a frontend developer specialized in Angular and a former intern at <strong>DEPI (Digital Egypt Pioneers Program)</strong>.
-                </p>
-                <p style="font-size: 1.1rem; line-height: 1.8; text-align: center; margin-bottom: 2rem;">
-                    I also have backend experience using <strong>PHP</strong> and <strong>Node.js</strong>, and I'm constantly improving my full-stack skills. 
-                    I'm a strong problem solver with a solid background in <strong>C++, Java, and Python</strong>.
-                </p>
-                <p style="font-size: 1.1rem; line-height: 1.8; text-align: center;">
-                    With a passion for building clean and interactive interfaces, I aim to deliver user-friendly solutions that meet real needs. 
-                    I'm detail-oriented, love working in teams, and always ready to learn something new.
-                </p>
-                
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
-                    <div style="background: #f8f9ff; padding: 2rem; border-radius: 15px; text-align: center;">
-                        <i class="fas fa-graduation-cap" style="font-size: 3rem; color: #667eea; margin-bottom: 1rem;"></i>
-                        <h3 style="color: #667eea; margin-bottom: 1rem;">Education</h3>
-                        <p><strong>Assiut University</strong><br>Faculty of Computers and Information<br>3rd Year • GPA: 3.23<br>Expected Graduation: 2027</p>
-                    </div>
-                    <div style="background: #f8f9ff; padding: 2rem; border-radius: 15px; text-align: center;">
-                        <i class="fas fa-map-marker-alt" style="font-size: 3rem; color: #667eea; margin-bottom: 1rem;"></i>
-                        <h3 style="color: #667eea; margin-bottom: 1rem;">Location</h3>
-                        <p><strong>Giza, Egypt</strong><br>Available for remote work<br>and local opportunities</p>
-                    </div>
-                    <div style="background: #f8f9ff; padding: 2rem; border-radius: 15px; text-align: center;">
-                        <i class="fas fa-language" style="font-size: 3rem; color: #667eea; margin-bottom: 1rem;"></i>
-                        <h3 style="color: #667eea; margin-bottom: 1rem;">Languages</h3>
-                        <p><strong>Arabic</strong> - Native<br><strong>English</strong> - Intermediate<br>Ready for international collaboration</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="page-section">
-            <div class="content-section animate-on-scroll">
-                <h2 class="section-title"><i class="fas fa-code"></i> Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3><i class="fas fa-laptop-code"></i> Frontend Development</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Angular</span>
-                            <span class="skill-tag">HTML5</span>
-                            <span class="skill-tag">CSS3</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">TypeScript</span>
-                            <span class="skill-tag">Bootstrap</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-server"></i> Backend Development</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">PHP</span>
-                            <span class="skill-tag">Node.js</span>
-                            <span class="skill-tag">RESTful APIs</span>
-                            <span class="skill-tag">MySQL</span>
-                            <span class="skill-tag">MongoDB</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-code-branch"></i> Programming Languages</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">C++</span>
-                            <span class="skill-tag">Java</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">SQL</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Git & GitHub</span>
-                            <span class="skill-tag">VS Code</span>
-                            <span class="skill-tag">Postman</span>
-                            <span class="skill-tag">XAMPP</span>
-                            <span class="skill-tag">Microsoft Office</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-lightbulb"></i> Soft Skills</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Communication</span>
-                            <span class="skill-tag">Teamwork</span>
-                            <span class="skill-tag">Leadership</span>
-                            <span class="skill-tag">Problem Solving</span>
-                            <span class="skill-tag">Time Management</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="page-section">
-            <div class="content-section animate-on-scroll">
-                <h2 class="section-title"><i class="fas fa-briefcase"></i> Experience & Activities</h2>
-                <div style="position: relative;">
-                    <div style="position: absolute; left: 30px; top: 0; bottom: 0; width: 4px; background: linear-gradient(180deg, #667eea, #764ba2);"></div>
-                    
-                    <div style="margin-bottom: 3rem; padding-left: 80px; position: relative;">
-                        <div style="position: absolute; left: -50px; top: 0; width: 60px; height: 60px; background: #667eea; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-code" style="color: white; font-size: 1.2rem;"></i>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-                            <h3 style="color: #667eea; margin-bottom: 0.5rem;">Full Stack Web Development</h3>
-                            <p style="color: #888; margin-bottom: 1rem;"><i class="fas fa-calendar"></i> Jul 2025 – Aug 2025 | National Telecommunication Institute (NTI)</p>
-                            <p>Specialized in Full Stack Web Development using PHP. Built full projects including <strong>FatoraBee Invoice Management System</strong></p>
-                        </div>
-                    </div>
-
-                    <div style="margin-bottom: 3rem; padding-left: 80px; position: relative;">
-                        <div style="position: absolute; left: -50px; top: 0; width: 60px; height: 60px; background: #764ba2; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-angular" style="color: white; font-size: 1.2rem;"></i>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-                            <h3 style="color: #667eea; margin-bottom: 0.5rem;">Frontend Development with Angular</h3>
-                            <p style="color: #888; margin-bottom: 1rem;"><i class="fas fa-calendar"></i> Oct 2024 – May 2025 | Digital Egypt Pioneers Program (DEPI)</p>
-                            <p>Specialized in Frontend Development with Angular. Worked with Node.js for Backend. Built full projects including <strong>STAR Shop E-Commerce platform</strong></p>
-                        </div>
-                    </div>
-
-                    <div style="margin-bottom: 3rem; padding-left: 80px; position: relative;">
-                        <div style="position: absolute; left: -50px; top: 0; width: 60px; height: 60px; background: #667eea; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-chalkboard-teacher" style="color: white; font-size: 1.2rem;"></i>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-                            <h3 style="color: #667eea; margin-bottom: 0.5rem;">Winter Camp Monitor</h3>
-                            <p style="color: #888; margin-bottom: 1rem;"><i class="fas fa-calendar"></i> Feb 2025 – Mar 2025</p>
-                            <p>Mentored junior students in programming and problem solving</p>
-                        </div>
-                    </div>
-
-                    <div style="margin-bottom: 3rem; padding-left: 80px; position: relative;">
-                        <div style="position: absolute; left: -50px; top: 0; width: 60px; height: 60px; background: #764ba2; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-trophy" style="color: white; font-size: 1.2rem;"></i>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-                            <h3 style="color: #667eea; margin-bottom: 0.5rem;">ICPC Newcomers Training</h3>
-                            <p style="color: #888; margin-bottom: 1rem;"><i class="fas fa-calendar"></i> Oct 2023 – Feb 2024 | Assiut University</p>
-                            <p>Gained strong foundations in C++ and Competitive Programming</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="page-section">
-            <div class="content-section animate-on-scroll">
-                <h2 class="section-title"><i class="fas fa-laptop-code"></i> Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h3 class="project-title">📑 FatoraBee – Invoice Management System</h3>
-                            <p class="project-date">Agust 2025 • Full Stack Developer</p>
-                        </div>
-                        <div class="project-body">
-                            <p>An intelligent invoice and sales management platform. Features include login/register, client and invoice management, and a dashboard with charts and statistics.</p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">Angular</span>
-                                <span class="tech-tag">PHP</span>
-                                <span class="tech-tag">MySQL</span>
-                                <span class="tech-tag">XAMPP</span>
-                            </div>
-                            <div style="margin-top: 1rem;">
-                                <a href="#" class="btn btn-primary" style="font-size: 0.9rem; padding: 0.5rem 1rem;">
-                                    <i class="fab fa-github"></i> View Project
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-header">
-                        <h3 class="project-title">⭐ STAR Shop – E-Commerce Platform</h3>
-                            <p class="project-date">May 2025 • Frontend Developer</p>
-                        </div>
-                        <div class="project-body">
-                            <p>Developed a full-featured electronics e-commerce platform. Users can browse products, manage favorites and cart, and perform secure login/signup with a clean, responsive UI.</p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">Angular</span>
-                                <span class="tech-tag">Node.js</span>
-                                <span class="tech-tag">MongoDB</span>
-                                <span class="tech-tag">GitHub</span>
-                            </div>
-                            <div style="margin-top: 1rem;">
-                                <a href="#" class="btn btn-primary" style="font-size: 0.9rem; padding: 0.5rem 1rem;">
-                                    <i class="fab fa-github"></i> GitHub Link
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h3 class="project-title">🧮 Geometric Calculator – Java OOP</h3>
-                            <p class="project-date">January 2025 • Java Developer</p>
-                        </div>
-                        <div class="project-body">
-                            <p>
-                                Developed a console-based geometric calculator using Object-Oriented Programming in Java. 
-                                It calculates area and volume for shapes like Circle and Cube. The project demonstrates 
-                                abstraction, inheritance, and polymorphism by implementing a base interface and extending classes.
-                            </p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">Java</span>
-                                <span class="tech-tag">OOP</span>
-                                <span class="tech-tag">Command Line</span>
-                                <span class="tech-tag">Git</span>
-                            </div>
-                            <div style="margin-top: 1rem;">
-                                    <i class="fab fa-github"></i> GitHub Link
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h3 class="project-title">🎓 University System – Desktop App</h3>
-                            <p class="project-date">March 2024 • C++ Developer</p>
-                        </div>
-                        <div class="project-body">
-                            <p>Developed a university management system for student records, course enrollments, and grades using Object-Oriented Programming in C++.</p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">C++</span>
-                                <span class="tech-tag">OOP</span>
-                                <span class="tech-tag">Data Structures</span>
-                            </div>
-                            <div style="margin-top: 1rem;">
-                                <a href="#" class="btn btn-primary" style="font-size: 0.9rem; padding: 0.5rem 1rem;">
-                                    <i class="fab fa-github"></i> View Code
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="project-card">
-    <div class="project-header">
-        <h3 class="project-title">🚀 AstroVerse – Interactive Space Learning</h3>
-        <p class="project-date">July 2025 • Fullstack Developer</p>
-    </div>
-    <div class="project-body">
-        <p>
-            AstroVerse is an interactive web application that simplifies space science and astronomy through fun and educational content.
-            It features a dynamic Solar System, quizzes, constellation builder, and a real-time space news ticker — all built with modern
-            Frontend and Backend technologies to engage users of all ages.
-        </p>
-        <ul>
-            <li><strong>Login/Sign Up:</strong> Modern UI with authentication and form validation.</li>
-            <li><strong>Interactive Solar System:</strong> Clickable planets showing fun facts.</li>
-            <li><strong>Constellation Builder:</strong> Connect stars to form patterns with progress tracking.</li>
-            <li><strong>Live News Ticker:</strong> Dynamic updates about space discoveries.</li>
-            <li><strong>Explore Section:</strong> Simplified explanations of astronomy, black holes, galaxies, and more.</li>
-            <li><strong>Contact Page:</strong> Real backend-connected form to send messages.</li>
-        </ul>
-        <div class="tech-stack">
-            <span class="tech-tag">Angular</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">Laravel</span>
-            <span class="tech-tag">PHP</span>
-            <span class="tech-tag">MySQL</span>
-            <span class="tech-tag">HTML</span>
-            <span class="tech-tag">CSS3</span>
-            <span class="tech-tag">Git</span>
-            <span class="tech-tag">GitHub</span>
+      </div>
+      <div class="col-lg-5 fade-up">
+        <div class="photo-frame-light">
+          <div class="geo-stickers"><i class="fas fa-cogs fa-spin"></i></div>
+          <div class="geo-stickers-left"><i class="fas fa-microchip"></i></div>
+          <div class="code-sticker-1 floating-icon-sm"><i class="fab fa-js"></i></div>
+          <div class="code-sticker-2 floating-icon-sm"><i class="fab fa-angular"></i></div>
+          <img src="./WhatsApp%20Image%202026-05-06%20at%201.45.06%20AM.jpeg" alt="Shaza Gouda" class="rounded-3">
+          <div class="text-center mt-2 small text-muted"><i class="fas fa-camera"></i> full‑stack craft · clean code · innovation</div>
         </div>
-        <div style="margin-top: 1rem;">
-                <i class="fab fa-github"></i> GitHub Link
-            </a>
+      </div>
+    </div>
+    <div class="row mt-5 g-3 fade-up">
+      <div class="col-md-3 col-6"><div class="stat-card"><i class="fas fa-laptop-code"></i><div class="stat-number" data-count="7">0+</div><div>Projects</div></div></div>
+      <div class="col-md-3 col-6"><div class="stat-card"><i class="fas fa-certificate"></i><div class="stat-number" data-count="6">0</div><div>Certifications</div></div></div>
+      <div class="col-md-3 col-6"><div class="stat-card"><i class="fas fa-briefcase"></i><div class="stat-number" data-count="4">0</div><div>Internships</div></div></div>
+      <div class="col-md-3 col-6"><div class="stat-card"><i class="fas fa-globe"></i><div class="stat-number" data-count="2">0</div><div>Languages</div></div></div>
+    </div>
+  </section>
+
+  <section id="about" class="py-5">
+    <div class="section-header fade-up">
+      <div class="section-title-wrap"><i class="fas fa-user-astronaut"></i><div><div class="section-number">01 — Profile</div><h2 class="section-title">Professional Background</h2></div></div>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-8 fade-up">
+        <div class="edu-card">
+          <p style="font-size: 1.08rem;">I'm Shaza, a 3rd-year Computer Science student at Assiut University (GPA 3.23). I've been trained across three intensive national programs: <strong>DEPI (.NET Full-Stack)</strong>, <strong>ITI (PHP Full-Stack)</strong>, and <strong>NTI (PHP Full-Stack)</strong>. I thrive in Agile teams and have built multiple end-to-end platforms — from authentication to real-time dashboards. Passionate about clean architecture, RESTful APIs, and creating user‑centric digital experiences.</p>
+          <hr>
+          <div class="mt-4"><i class="fas fa-map-marker-alt text-copper"></i> Giza, Egypt</div>
         </div>
+      </div>
+      <div class="col-lg-4 fade-up">
+        <div class="edu-card text-center">
+          <i class="fas fa-graduation-cap fa-2x" style="color: var(--copper);"></i>
+          <h4 class="mt-2">Faculty of Computers and Information</h4>
+          <p>Assiut University · 3rd Year · GPA 3.23<br>Expected 2027</p>
+          <i class="fas fa-language"></i> Arabic (Native) · English (B2–C1)<br>
+          <i class="fas fa-clock mt-2"></i> Available for full‑time & remote roles
+        </div>
+      </div>
     </div>
-</div>
+  </section>
 
-
-                    
-                    
-                </div>
-
-                <div style="text-align: center; margin-top: 3rem;">
-                    <h3 style="color: #667eea; margin-bottom: 2rem;">📜 Certificates</h3>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
-                        <div style="background: #f8f9ff; padding: 1.5rem; border-radius: 10px; border-left: 4px solid #667eea;">
-                            <i class="fas fa-certificate" style="color: #667eea; font-size: 1.5rem; margin-bottom: 0.5rem;"></i>
-                            <p style="font-weight: 600; margin-bottom: 0.5rem;">Full Stack Web Development with PHP</p>
-                            <p style="color: #888; font-size: 0.9rem;">National Telecommunication Institute (NTI)</p>
-                        </div>
-                        <div style="background: #f8f9ff; padding: 1.5rem; border-radius: 10px; border-left: 4px solid #764ba2;">
-                            <i class="fas fa-certificate" style="color: #764ba2; font-size: 1.5rem; margin-bottom: 0.5rem;"></i>
-                            <p style="font-weight: 600; margin-bottom: 0.5rem;">Frontend Web Development with Angular</p>
-                            <p style="color: #888; font-size: 0.9rem;">Digital Egypt Pioneers Program (DEPI)</p>
-                        </div>
-                        <div style="background: #f8f9ff; padding: 1.5rem; border-radius: 10px; border-left: 4px solid #667eea;">
-                            <i class="fas fa-certificate" style="color: #667eea; font-size: 1.5rem; margin-bottom: 0.5rem;"></i>
-                            <p style="font-weight: 600; margin-bottom: 0.5rem;">Winter Programming Camp (C++ & OOP)</p>
-                            <p style="color: #888; font-size: 0.9rem;">Assiut University</p>
-                        </div>
-                        <div style="background: #f8f9ff; padding: 1.5rem; border-radius: 10px; border-left: 4px solid #764ba2;">
-                            <i class="fas fa-certificate" style="color: #764ba2; font-size: 1.5rem; margin-bottom: 0.5rem;"></i>
-                            <p style="font-weight: 600; margin-bottom: 0.5rem;">ICPC Newcomers Training</p>
-                            <p style="color: #888; font-size: 0.9rem;">Assiut University</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="page-section">
-            <div class="content-section animate-on-scroll">
-                <h2 class="section-title"><i class="fas fa-envelope"></i> Contact Me</h2>
-                <p style="text-align: center; font-size: 1.1rem; margin-bottom: 3rem; color: #666;">
-                    Let's connect and build something amazing together!
-                </p>
-                <div class="contact-grid">
-                    <div class="contact-info">
-                        <h3 style="color: #667eea; margin-bottom: 2rem; text-align: center;">Get In Touch</h3>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>shazagouda48@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-linkedin"></i>
-                            <div>
-                                <h4>LinkedIn</h4>
-                                <p>linkedin.com/in/shazagouda-27aa3931b</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-github"></i>
-                            <div>
-                                <h4>GitHub</h4>
-                                <p> github.com/shazagouda</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Location</h4>
-                                <p>Giza, Egypt</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-form">
-                        <h3 style="color: #667eea; margin-bottom: 2rem; text-align: center;">Send Message</h3>
-                        <form id="contactForm">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary" style="width: 100%;">
-                                <i class="fas fa-paper-plane" ></i> Send Message
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <section id="skills" class="py-5" style="background: #fcf7f2; border-radius: 48px;">
+    <div class="section-header fade-up">
+      <div class="section-title-wrap"><i class="fas fa-microchip"></i><div><div class="section-number">02 — Tech Stack</div><h2 class="section-title">Technical Arsenal</h2></div></div>
     </div>
-      <script src="./portfolio.js"></script>
+    <div class="row">
+      <div class="col-md-6 mb-4"><div class="fw-bold mb-2"><i class="fas fa-laptop-code me-2"></i>Frontend</div><div class="d-flex flex-wrap gap-2"><div class="skill-item"><i class="fab fa-angular"></i>Angular 15+</div><div class="skill-item"><i class="fab fa-react"></i>React (basic)</div><div class="skill-item"><i class="fab fa-js"></i>TypeScript</div><div class="skill-item"><i class="fab fa-bootstrap"></i>Bootstrap/Tailwind</div><div class="skill-item"><i class="fab fa-html5"></i>HTML5/CSS3</div></div></div>
+      <div class="col-md-6 mb-4"><div class="fw-bold mb-2"><i class="fas fa-server me-2"></i>Backend & Databases</div><div class="d-flex flex-wrap gap-2"><div class="skill-item"><i class="fab fa-php"></i>PHP/Laravel</div><div class="skill-item"><i class="fab fa-node"></i>Node.js/Express</div><div class="skill-item"><i class="fas fa-database"></i>MySQL/PostgreSQL</div><div class="skill-item"><i class="fas fa-leaf"></i>MongoDB</div><div class="skill-item"><i class="fab fa-microsoft"></i>ASP.NET Core</div><div class="skill-item"><i class="fas fa-code"></i>C# / .NET MVC</div><div class="skill-item"><i class="fas fa-plug"></i>RESTful APIs</div></div></div>
+      <div class="col-md-6 mb-4"><div class="fw-bold mb-2"><i class="fas fa-cogs me-2"></i>DevOps & Tools</div><div class="d-flex flex-wrap gap-2"><div class="skill-item"><i class="fab fa-docker"></i>Docker</div><div class="skill-item"><i class="fab fa-git-alt"></i>Git/GitHub Actions</div><div class="skill-item">Postman</div><div class="skill-item">Jest/JUnit</div><div class="skill-item"><i class="fas fa-cloud"></i>Azure basics</div></div></div>
+      <div class="col-md-6 mb-4"><div class="fw-bold mb-2"><i class="fas fa-users me-2"></i>Soft Skills</div><div class="d-flex flex-wrap gap-2"><div class="skill-item">Agile/Scrum</div><div class="skill-item">Problem Solving</div><div class="skill-item">Technical Writing</div><div class="skill-item">Code Reviews</div><div class="skill-item">Mentoring</div></div></div>
+    </div>
+  </section>
 
+  <section id="experience" class="py-5">
+    <div class="section-header fade-up">
+      <div class="section-title-wrap"><i class="fas fa-briefcase"></i><div><div class="section-number">03 — Journey</div><h2 class="section-title">Training & Work Experience</h2></div></div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="exp-item fade-up"><div class="exp-date"><i class="far fa-calendar-alt"></i> Nov 2025 – Present</div><h4 class="fw-bold">Full-Stack .NET Development Trainee <i class="fas fa-certificate ms-2" style="color:var(--copper);"></i></h4><div class="text-muted mb-2">Digital Egypt Pioneers Program (DEPI) · Remote</div><ul><li>Building enterprise-grade apps with ASP.NET Core Web API, MVC, Entity Framework, and SQL Server.</li><li>Implementing unit testing, JWT authentication, and layered architecture (clean architecture).</li></ul></div>
+        <div class="exp-item fade-up"><div class="exp-date"><i class="far fa-calendar-alt"></i> Aug 2025 – Sep 2025</div><h4 class="fw-bold">Full-Stack Web Development Intern (PHP) <i class="fas fa-database ms-2"></i></h4><div class="text-muted mb-2">Information Technology Institute (ITI) · Egypt</div><ul><li>Delivered dynamic MVC web apps, RESTful APIs, and integrated third‑party services.</li><li>Collaborated in sprints to build a library management system.</li></ul></div>
+        <div class="exp-item fade-up"><div class="exp-date"><i class="far fa-calendar-alt"></i> Jul 2025 – Aug 2025</div><h4 class="fw-bold">Full-Stack Web Development Intern (PHP)</h4><div class="text-muted mb-2">National Telecommunication Institute (NTI) · Egypt</div><ul><li>Engineered <strong>FatoraBee</strong> — invoice management platform with authentication, dynamic dashboards (Chart.js), and PDF generation using Angular + PHP + MySQL.</li></ul></div>
+        <div class="exp-item fade-up"><div class="exp-date"><i class="far fa-calendar-alt"></i> Oct 2024 – May 2025</div><h4 class="fw-bold">Frontend Development with Angular — Trainee</h4><div class="text-muted mb-2">DEPI · Remote</div><ul><li>Architected <strong>STAR Shop</strong> e‑commerce: Angular components, Node.js backend, JWT auth, cart/favorites, and responsive design.</li></ul></div>
+        <div class="exp-item fade-up"><div class="exp-date"><i class="far fa-calendar-alt"></i> Feb 2025 – Mar 2025</div><h4 class="fw-bold">Winter Camp Monitor</h4><div class="text-muted mb-2">Assiut University</div><ul><li>Mentored 40+ junior students in C++ and OOP fundamentals, conducted code reviews and debugging sessions.</li></ul></div>
+        <div class="exp-item fade-up"><div class="exp-date"><i class="far fa-calendar-alt"></i> Oct 2023 – Feb 2024</div><h4 class="fw-bold">ICPC Newcomers Training</h4><div class="text-muted mb-2">Assiut University CPC</div><ul><li>Solved 200+ algorithmic problems, strengthened C++ and data structure skills.</li></ul></div>
+      </div>
+      <div class="col-lg-4 fade-up"><div class="bg-white p-4 rounded-4 border text-center"><i class="fas fa-rocket fa-3x mb-3" style="color: var(--copper);"></i><p><strong>End-to-end mindset</strong><br>Angular · .NET Core · PHP · Node.js · Docker</p><hr><i class="fas fa-check-circle"></i> "Clean code, scalable solutions"<br><small class="text-muted">4+ production‑ready projects</small></div></div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-5" style="background: #fcf7f2; border-radius: 48px;">
+    <div class="section-header fade-up">
+      <div class="section-title-wrap"><i class="fas fa-laptop-code"></i><div><div class="section-number">04 — Portfolio</div><h2 class="section-title">Featured Projects</h2></div></div>
+      <i class="fas fa-github-alt text-copper"></i>
+    </div>
+    <div class="row g-4">
+      <!-- TrustLink -->
+      <div class="col-md-6 col-lg-4 fade-up"><div class="project-card"><div class="d-flex justify-content-between"><span class="badge bg-light text-dark border"><i class="fas fa-link"></i> TrustLink</span><i class="fas fa-shield-alt text-copper"></i></div><h4 class="mt-3">TrustLink — Secure Document Verification</h4><p>Decentralized credibility platform using blockchain-inspired verification, QR-based document authenticity, and certificate issuance. Built with Angular + ASP.NET Core Web API + SQL Server.</p><div class="mb-3"><span class="tool-tag"><i class="fab fa-angular"></i> Angular</span><span class="tool-tag"><i class="fab fa-microsoft"></i> .NET Core</span><span class="tool-tag"><i class="fas fa-database"></i> SQL Server</span><span class="tool-tag"><i class="fas fa-qrcode"></i> QR tech</span></div><a href="#" class="project-link" target="_blank" id="trustlinkGh"><i class="fab fa-github"></i> GitHub Repository →</a></div></div>
+      <!-- FatoraBee -->
+      <div class="col-md-6 col-lg-4 fade-up"><div class="project-card"><div class="d-flex justify-content-between"><span class="badge bg-light text-dark border"><i class="fas fa-file-invoice"></i> Invoice</span><i class="fas fa-chart-line text-copper"></i></div><h4 class="mt-3">FatoraBee</h4><p>Invoice management system with role-based auth, client/invoice CRUD, real-time analytics dashboard (Chart.js).</p><div class="mb-3"><span class="tool-tag"><i class="fab fa-angular"></i> Angular</span><span class="tool-tag"><i class="fab fa-php"></i> PHP</span><span class="tool-tag"><i class="fas fa-database"></i> MySQL</span></div><a href="#" class="project-link" target="_blank" id="fatoraGh">GitHub →</a></div></div>
+      <!-- STAR Shop -->
+      <div class="col-md-6 col-lg-4 fade-up"><div class="project-card"><div class="d-flex justify-content-between"><span class="badge bg-light text-dark border"><i class="fas fa-shopping-cart"></i> E‑commerce</span><i class="fas fa-star text-copper"></i></div><h4 class="mt-3">STAR Shop</h4><p>Electronics e‑commerce: product catalog, cart/favorites, JWT authentication, fully responsive (Angular + Node.js + MongoDB).</p><div class="mb-3"><span class="tool-tag"><i class="fab fa-angular"></i> Angular</span><span class="tool-tag"><i class="fab fa-node"></i> Node.js</span><span class="tool-tag"><i class="fas fa-database"></i> MongoDB</span></div><a href="#" class="project-link" target="_blank" id="starGh">GitHub →</a></div></div>
+      <!-- AstroVerse -->
+      <div class="col-md-6 col-lg-4 fade-up"><div class="project-card"><div class="d-flex justify-content-between"><span class="badge bg-light text-dark border"><i class="fas fa-rocket"></i> Space</span><i class="fas fa-globe text-copper"></i></div><h4 class="mt-3">AstroVerse</h4><p>Interactive space learning platform: 3D solar system, constellation builder, quiz engine, live news API (Angular + Laravel + MySQL).</p><div class="mb-3"><span class="tool-tag">Angular</span><span class="tool-tag">Laravel</span><span class="tool-tag">PHP</span><span class="tool-tag">MySQL</span></div><a href="#" class="project-link" target="_blank" id="astroGh">Explore →</a></div></div>
+      <!-- SeeForMe -->
+      <div class="col-md-6 col-lg-4 fade-up"><div class="project-card"><div class="d-flex justify-content-between"><span class="badge bg-light text-dark border"><i class="fas fa-universal-access"></i> A11Y</span><i class="fas fa-eye text-copper"></i></div><h4 class="mt-3">SeeForMe — Accessibility Assistant</h4><p>Assistive tech simulation: Web Speech API, camera access, biopunk UI (Vanilla JS, Bootstrap 5).</p><div class="mb-3"><span class="tool-tag">HTML5/CSS3</span><span class="tool-tag">Vanilla JS</span><span class="tool-tag">Web Speech API</span></div><a href="#" class="project-link" target="_blank" id="seeForMeGh">GitHub →</a></div></div>
+      <!-- University System -->
+      <div class="col-md-6 col-lg-4 fade-up"><div class="project-card"><div class="d-flex justify-content-between"><span class="badge bg-light text-dark border"><i class="fas fa-university"></i> C++</span><i class="fas fa-graduation-cap text-copper"></i></div><h4 class="mt-3">University Management System</h4><p>Desktop app: student enrollment, course management, grade tracking using OOP, file handling, and data structures.</p><div class="mb-3"><span class="tool-tag">C++</span><span class="tool-tag">OOP</span><span class="tool-tag">Data Structures</span></div><a href="#" class="project-link" target="_blank" id="uniGh">View Code →</a></div></div>
+    </div>
+
+    <div class="mt-5 fade-up">
+      <h3 class="text-center mb-4" style="color: var(--copper);"><i class="fas fa-certificate me-2"></i>Certifications & Credentials</h3>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="cert-row"><span><i class="fas fa-code"></i> Full-Stack Web Development with PHP – NTI</span><a href="#" class="cert-link" id="certNti"><i class="fas fa-external-link-alt"></i> View Certificate</a></div>
+          <div class="cert-row"><span><i class="fas fa-code"></i> Full-Stack Web Development with PHP – ITI</span><a href="#" class="cert-link" id="certIti"><i class="fas fa-external-link-alt"></i> View Certificate</a></div>
+          <div class="cert-row"><span><i class="fab fa-angular"></i> Frontend Web Development with Angular – DEPI</span><a href="#" class="cert-link" id="certAngular"><i class="fas fa-external-link-alt"></i> View Certificate</a></div>
+          <div class="cert-row"><span><i class="fab fa-microsoft"></i> Full-Stack .NET Development – DEPI (in progress)</span><span class="badge bg-warning-subtle text-dark">In Progress</span></div>
+          <div class="cert-row"><span><i class="fas fa-code-branch"></i> Winter Programming Camp (C++ & OOP) – Assiut Univ.</span><a href="#" class="cert-link" id="certWinter"><i class="fas fa-external-link-alt"></i> View Certificate</a></div>
+          <div class="cert-row"><span><i class="fas fa-trophy"></i> ICPC Newcomers Training – Assiut Univ.</span><a href="#" class="cert-link" id="certIcpc"><i class="fas fa-external-link-alt"></i> View Certificate</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5">
+    <div class="section-header fade-up">
+      <div class="section-title-wrap"><i class="fas fa-paper-plane"></i><div><div class="section-number">05 — Connect</div><h2 class="section-title">Let's Collaborate</h2></div></div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-10 fade-up">
+        <div class="contact-box">
+          <i class="fas fa-envelope-open-text fa-2x text-copper mb-3"></i>
+          <h3>Available for opportunities</h3>
+          <p>Full‑time, part‑time, freelance, or remote international roles. I respond within 24h.</p>
+          <a href="mailto:shazagouda48@gmail.com" class="fw-bold fs-5" style="color: var(--copper);"><i class="fas fa-envelope"></i> shazagouda48@gmail.com</a>
+          <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
+            <a href="https://github.com/shazagouda" class="btn btn-outline-copper rounded-pill"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/shaza-gouda-27aa3931b/" class="btn btn-outline-copper rounded-pill"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          </div>
+          <hr>
+          <form id="contactForm" class="mt-4">
+            <div class="row g-3">
+              <div class="col-md-6"><input type="text" class="form-control" placeholder="Full name" id="contactName" required></div>
+              <div class="col-md-6"><input type="email" class="form-control" placeholder="Email address" id="contactEmail" required></div>
+              <div class="col-12"><textarea class="form-control" rows="4" placeholder="Your message..." id="contactMsg" required></textarea></div>
+              <div class="col-12"><button type="submit" class="btn btn-outline-copper w-100 py-2"><i class="fas fa-paper-plane"></i> Send Message →</button></div>
+            </div>
+          </form>
+          <small class="text-muted mt-3 d-block">I respect your privacy. No spam, ever.</small>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <i class="fas fa-laptop-code me-2"></i> Shaza Gouda — Full-Stack Developer <span id="currentYear"></span>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
